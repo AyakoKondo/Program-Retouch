@@ -117,8 +117,8 @@ public class ItemDAO {
 				st.setInt(2, pageMaxItemCount);
 			} else {
 				// 商品名検索
-				st = con.prepareStatement("SELECT * FROM m_item WHERE name = ?  ORDER BY id ASC LIMIT ?,? ");
-				st.setString(1,searchWord);
+				st = con.prepareStatement("SELECT * FROM m_item WHERE name like ?  ORDER BY id ASC LIMIT ?,? ");
+				st.setString(1,"%" + searchWord + "%");
 				st.setInt(2, startiItemNum);
 				st.setInt(3, pageMaxItemCount);
 			}
