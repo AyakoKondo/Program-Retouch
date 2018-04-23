@@ -14,7 +14,6 @@ public class BuyDataBeans  implements Serializable {
 	private String deliveryMethodName;
 	private int deliveryMethodPrice;
 
-
 	public int getId() {
 		return id;
 	}
