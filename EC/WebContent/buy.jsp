@@ -44,7 +44,6 @@
 											<td class="center"><%=cartInItem.getName()%></td>
 											<td class="center"><%=cartInItem.getPrice()%>円</td>
 											<td class="center"><%=cartInItem.getPrice()%>円</td>
-										</tr>
 										<%
 											}
 										%>

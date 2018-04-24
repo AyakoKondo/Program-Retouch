@@ -22,6 +22,7 @@ public class Logout extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.setAttribute("isLogin", false);
 		session.removeAttribute("userId");
+		session.removeAttribute("cart");
 		request.getRequestDispatcher(EcHelper.LOGOUT_PAGE).forward(request, response);
 	}
 
