@@ -37,12 +37,12 @@ public class BuyConfirm extends HttpServlet {
 			
 			
 			
-			int totalPrice = EcHelper.getTotalItemPrice(cartIDBList)/*+ここに配送料をプラス？*/;
+			int totalPrice = EcHelper.getTotalItemPrice(cartIDBList);
 
 			BuyDataBeans bdb = new BuyDataBeans();
 			bdb.setUserId((int) session.getAttribute("userId"));
 			bdb.setTotalPrice(totalPrice);
-			bdb.setDelivertMethodId(userSelectDMB.getId());//ここにうまく入ってない
+			bdb.setDelivertMethodId(userSelectDMB.getId());
 			bdb.setDeliveryMethodName(userSelectDMB.getName());
 			bdb.setDeliveryMethodPrice(userSelectDMB.getPrice());
 

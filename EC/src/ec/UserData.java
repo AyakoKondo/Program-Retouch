@@ -57,13 +57,3 @@ public class UserData extends HttpServlet {
 		}
 	}
 }
-////ユーザ一覧情報を取得
-//		UserDao userDao = new UserDao();
-//		List<User> userList = userDao.findAll();
-//
-//		// リクエストスコープにユーザ一覧情報をセット
-//		request.setAttribute("userList", userList);
-//
-//		// ユーザ一覧のjspにフォワード
-//		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/userList.jsp");
-//		dispatcher.forward(request, response);

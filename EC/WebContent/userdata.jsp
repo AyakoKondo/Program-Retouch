@@ -76,9 +76,9 @@
 							  	<% for(BuyDataBeans bdb:buyDataList){%>
 								<tr>
 									<td class="center"><a href="UserBuyHistoryDetail?buy_id=<%=bdb.getId()%>" class="btn-floating btn waves-effect waves-light "> <i class="material-icons">details</i></a></td>
-									<td class="center"><%=bdb.getBuyDate()%></td>
+									<td class="center"><%=bdb.getFormatDate()%></td>
 									<td class="center"><%=bdb.getDeliveryMethodName()%></td>
-									<td class="center"><%=bdb.getTotalPrice()%></td>
+									<td class="center"><%=bdb.getTotalPrice()+ bdb.getDeliveryMethodPrice()%>円</td>
 								</tr>
 								<%} %>
 							</tbody>

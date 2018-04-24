@@ -31,7 +31,7 @@ public class UserDataUpdateConfirm extends HttpServlet {
 			//エラーメッセージを格納する変数
 			String validationMessage = "";
 
-			//入力フォームから受け取った値をBeans偽っと
+			//入力フォームから受け取った値をBeansにセット
 			UserDataBeans udb = new UserDataBeans();
 			udb.setUpdateUserDataBeansInfo(request.getParameter("user_name"),request.getParameter("login_id"),request.getParameter("user_address"), (int) session.getAttribute("userId"));
 

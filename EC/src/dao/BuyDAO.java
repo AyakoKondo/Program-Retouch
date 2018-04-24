@@ -132,6 +132,7 @@ public class BuyDAO {
 				bdb.setBuyDate(rs.getTimestamp("create_date"));
 				bdb.setUserId(rs.getInt("user_id"));
 				bdb.setDeliveryMethodName(rs.getString("name"));
+				bdb.setDeliveryMethodPrice(rs.getInt("price"));
 				buyDataList.add(bdb);
 			}
 	
